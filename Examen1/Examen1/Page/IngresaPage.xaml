@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen1.Page.IngresaPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="70" />
+                    <RowDefinition  />
+                    <RowDefinition  Height="1"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0" />
+                </Grid.ColumnDefinitions>
+
+                <Button  x:Name="BtnNuevo" Text="Nueva Ubicacion" Clicked="BtnNuevo_Clicked"  Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="Btnlts" Text="Unicaciones Salvadas" Clicked="Btnlts_Clicked" Grid.Row="0" Grid.Column="1"/>
+
+            </Grid>
+
+            <Label Text="Ubicaciobn"/>
+
+            <Entry x:Name="txtcod" />
+
+            <Label Text="Longitud"/>
+            <Entry x:Name="txtlongitud" Placeholder="Longitud" Keyboard="Numeric"></Entry>
+
+            <Label Text="Latitud"/>
+            <Entry x:Name="txtlatitud" Placeholder="Latitud" Keyboard="Numeric"></Entry>
+
+            <Label Text="Texto Corto"/>
+            <Entry x:Name="txtcorto" Placeholder="Ingrese un texto corto" Keyboard="Text"></Entry>
+
+            <Label Text="Texto Largo"/>
+            <Entry x:Name="txtlargo" Placeholder="Ingrese un texto largo" Keyboard="Text"></Entry>
+
+            <Button x:Name="BtnIngresar" Text="Ingresar datos" Clicked="BtnIngresar_Clicked"/>
+            <Button x:Name="BtnLista" Text="Unicaciones Salvadas" Clicked="BtnLista_Clicked"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

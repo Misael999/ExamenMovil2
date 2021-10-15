@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen1.Page.ListaPage">
+    <ContentPage.Content>
+        <ListView x:Name="LstDatos" ItemTapped="LstDatos_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="Auto"/>
+                                <RowDefinition  Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding IdDatos}" Grid.Row="0" Grid.Column="0" TextColor="White" />
+                            <Label Text="{Binding longitud}" Grid.Row="0" Grid.Column="1" TextColor="Gray"  />
+                            <Label Text="{Binding latitud}" Grid.Row="0" Grid.Column="2" TextColor="Gray" />
+                            <Label Text="{Binding textocorto}" Grid.Row="0" Grid.Column="3" TextColor="Gray" />
+                            <Label Text="{Binding textolargo}" Grid.Row="0" Grid.Column="4" TextColor="Gray" />
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#66D328" Padding="24" CornerRadius="0">
+            <Label Text="BIENVENIDO A MI GEOCALIZAZCION" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Button x:Name="BtnIngresar" Text="Iniciar" Clicked="BtnIngresar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>

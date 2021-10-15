@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen1.Page.UpdatePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="Auto"/>
+                    <RowDefinition  Height="Auto"/>
+                    <RowDefinition  Height="Auto"/>
+                    <RowDefinition  Height="Auto"/>
+                    <RowDefinition  Height="Auto"/>
+                    <RowDefinition  Height="80"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="6" />
+                    <ColumnDefinition Width="0" />
+                    <ColumnDefinition Width="0" />
+                </Grid.ColumnDefinitions>
+
+
+                <Entry x:Name="txtcod"  Grid.Row="0" Grid.Column="0" Text="{Binding IdDatos}" IsReadOnly="True" />
+
+                <Label Text="Longitud" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtlongitud" Placeholder="Longitud" Keyboard="Numeric"  Grid.Row="1" Grid.Column="1" Text="{Binding longitud}" IsReadOnly="True"></Entry>
+
+                <Label Text="Latitud" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtlatitud" Placeholder="Latitud" Grid.Row="2" Grid.Column="1" Text="{Binding latitud}" IsReadOnly="True"></Entry>
+
+                <Label Text="Texto Corto" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtcorto" Placeholder="Ingrese un texto corto" Keyboard="Text" Grid.Row="3" Grid.Column="1" Text="{Binding textocorto}" ></Entry>
+
+                <Label Text="Texto Largo" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtlargo" Placeholder="Ingrese un texto largo" Keyboard="Text" Grid.Row="4" Grid.Column="1" Text="{Binding textolargo}"></Entry>
+                
+                <Button x:Name="BtnActualizar" Text="Actualizar Registro" Clicked="BtnActualizar_Clicked" Grid.Row="5" Grid.Column="0"/>
+                <Button x:Name="BtnBorrar" Text="Borrar Registro" Clicked="BtnBorrar_Clicked" Grid.Row="5" Grid.Column="1"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
